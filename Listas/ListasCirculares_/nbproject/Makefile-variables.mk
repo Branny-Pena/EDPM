@@ -9,16 +9,16 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=listascirculares
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/listascirculares
+CND_ARTIFACT_NAME_Debug=listascirculares_
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/listascirculares_
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
 CND_PACKAGE_NAME_Debug=listascirculares.tar
 CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/listascirculares.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=listascirculares
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/listascirculares
+CND_ARTIFACT_NAME_Release=listascirculares_
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/listascirculares_
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
 CND_PACKAGE_NAME_Release=listascirculares.tar
 CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/listascirculares.tar

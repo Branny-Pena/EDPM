@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=ListasCirculares
+PROJECTNAME=ListasCirculares_
 
 # Active Configuration
 DEFAULTCONF=Debug

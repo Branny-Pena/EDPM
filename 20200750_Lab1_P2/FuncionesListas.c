@@ -147,7 +147,9 @@ Nodo* buscarElemento(Nodo* inicio, Nodo* fin, ElementoLista elemento){
 void actualizacion(Lista *pL, ElementoLista elemento){
     Nodo* pNodo;
     pNodo = acceso(*pL, elemento);
-    pNodo->elemento = elemento;
+    eliminarNodo(pL, elemento);
+    insertarClienteOrden(pL, elemento);
+    //pNodo->elemento = elemento;
 }
 
 void eliminarNodo(Lista *pL, ElementoLista elemento){

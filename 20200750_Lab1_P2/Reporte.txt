@@ -2,7 +2,7 @@ DNI               Nombre del Cliente                                Saldo       
 ====================================================================================================
 20202020        BACA/COSSIO/JUAN/FRANCISCO                         12800.00              C
 76388967        GONZALES/QUIO/ISABEL                               5442.70               C
-48184351        MESTANZA/PEREZ-ALIAGA/MANUEL                       428.40                V
 11118888        PEREZ-ALBELA/COSSIO/JOSE/LUIS/ALBERTO              19203.50              V
 12128313        MESTANZA/PEREZ-ALIAGA/MANUEL                       821.30                V
+48184351        MESTANZA/PEREZ-ALIAGA/MANUEL                       428.40                V
 

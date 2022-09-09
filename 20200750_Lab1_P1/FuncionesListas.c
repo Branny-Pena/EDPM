@@ -86,7 +86,8 @@ Nodo* obtenerAnteriorV(Lista *lista, ElementoLista elemento){
     Nodo* pNodoAnterior, *pNodo;
     pNodo = lista->cabeza;
     pNodoAnterior = NULL;
-    while(pNodo != NULL){
+    //Se obtiene el ultimo elemento de los clientes normales
+    while(pNodo != NULL  && pNodo != lista->ClienteV){
         pNodoAnterior = pNodo;
         pNodo = pNodo->sgte;
     }

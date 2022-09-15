@@ -18,6 +18,7 @@ typedef struct nodo{
 typedef struct cola{
     Nodo *cabeza;
     Nodo *cola;
+    int longitud;
 } Cola;
 
 void construirCola(Cola *pC);
@@ -27,6 +28,12 @@ int esColaVacia(Cola c);
 Nodo* crearNuevoNodo(ElementoCola elemento);
 
 void encolar(Cola *pC, ElementoCola elemento);
+
+void mostrar(Cola c);
+
+int obtenerLongitud(Cola c);
+
+ElementoCola desencolar(Cola *pC);
 
 #endif /* FUNCIONESCOLAS_H */
 

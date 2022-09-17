@@ -43,3 +43,18 @@ void mostrar(Pila p){
     }
     printf("\n");
 }
+
+int obtenerLongitud(Pila p){
+    return p.longitud;
+}
+
+ElementoPila desapilar(Pila *pP){
+    Nodo *pNodo;
+    ElementoPila elemento;
+    pNodo = pP->cima;
+    elemento = pNodo->elemento;
+    pP->cima = pNodo->sig;
+    pP->longitud--;
+    free(pNodo);
+    return elemento;
+}

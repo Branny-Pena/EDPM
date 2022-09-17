@@ -30,5 +30,8 @@ void apilar(Pila *pP, ElementoPila elemento);
 
 void mostrar(Pila p);
 
+int obtenerLongitud(Pila p);
+
+ElementoPila desapilar(Pila *pP);
 #endif /* FUNCIONESPILAS_H */
 

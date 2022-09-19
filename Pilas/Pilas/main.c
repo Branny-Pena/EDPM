@@ -11,6 +11,8 @@
 
 int main(int argc, char** argv) {
     Pila stack;
+    int longitud;
+    ElementoPila elemento;
     construirPila(&stack);
     mostrar(stack);
     
@@ -29,6 +31,14 @@ int main(int argc, char** argv) {
     apilar(&stack, 78);
     mostrar(stack);
     
+    longitud = obtenerLongitud(stack);
+    printf("La longitud de la pila es: %d\n", longitud);
+    
+    while(!esPilaVacia(stack)){
+        elemento = desapilar(&stack);
+        printf("Elemento desapilado: %d\n", elemento);
+        mostrar(stack);
+    }
     return (EXIT_SUCCESS);
 }
 

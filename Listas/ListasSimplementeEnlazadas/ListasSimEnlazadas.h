@@ -48,5 +48,7 @@ int obtenerLongitud(Lista l);
 
 void destruirLista(Lista *pL);
 
+void ordenarLista(Lista *pL);
+
 #endif /* LISTASSIMENLAZADAS_H */
 

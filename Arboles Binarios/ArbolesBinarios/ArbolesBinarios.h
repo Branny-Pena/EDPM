@@ -7,6 +7,7 @@
 
 #ifndef ARBOLESBINARIOS_H
 #define ARBOLESBINARIOS_H
+#include "ArbolBinarioBusqueda.h"
 
 typedef int ElementoArbol;
 
@@ -17,6 +18,7 @@ typedef struct nodo{
 } Nodo;
 
 typedef Nodo* arbolBinario;
+
 
 #endif /* ARBOLESBINARIOS_H */
 

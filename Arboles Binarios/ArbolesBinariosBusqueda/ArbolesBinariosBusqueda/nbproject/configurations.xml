@@ -4,8 +4,6 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>ArbolBinarioBusqueda.h</itemPath>
-      <itemPath>ArbolesBinarios.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,8 +12,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>ArbolesBinarios.c</itemPath>
-      <itemPath>ArbolesBinariosBusqueda.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -40,14 +36,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="ArbolBinarioBusqueda.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ArbolesBinarios.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="ArbolesBinarios.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ArbolesBinariosBusqueda.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
@@ -71,14 +59,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="ArbolBinarioBusqueda.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ArbolesBinarios.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="ArbolesBinarios.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ArbolesBinariosBusqueda.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>

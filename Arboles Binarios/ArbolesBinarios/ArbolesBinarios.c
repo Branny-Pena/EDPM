@@ -13,3 +13,7 @@ int esArbolVacio(arbolBinario tad){
 void postOrden(arbolBinario tad){
 
 }
+
+void insertarAb(ArbolBB tad, ElementoArbol dato, Nodo hIzqrd, Nodo Hdrh){
+    
+}

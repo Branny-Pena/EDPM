@@ -21,5 +21,7 @@ ArbolBB minimoArbol(ArbolBB tad);
 
 ArbolBB borraNodo(ArbolBB tad, ElementoArbol dato);
 
+int comparaAbb(ElementoArbol a, ElementoArbol b);
+
 #endif /* ARBOLBINARIOBUSQUEDA_H */
 

@@ -3,11 +3,29 @@
 #include "ArbolesBinarios.h"
 #include "ArbolBinarioBusqueda.h"
 
-void insertarAbb(ArbolBB* tad, ElementoArbol dato){
+//se especifica segun el problema
+int comparaAbb(ElementoArbol a, ElementoArbol b){
+    if(a==b)
+        return 0;
+    if(a<b) 
+        return -1;
+    if(a>b)
+        return 1;
+}
+
+void insertarAbb(ArbolBB *tad, ElementoArbol dato){
     if(esArbolVacio(*tad))
         insertarAb(tad, dato, NULL, NULL);
     else{
-        
+        if(!comparaAbb((*tad)->elemento, dato)){
+            printf("No se puede insertar repetido");
+            return;
+        }
+        if(comparaAbb(tad->elemento, dato) == 1)
+            insertarAbb(&(*tad)->hIzq, dato);
+        else{
+            insertarAbb(&(*tad)->hDrch, dato);
+        }
     }
 }
 
@@ -35,10 +53,10 @@ ElementoArbol maximoAbb(ArbolBB tad){
 ArbolBB borraNodo(ArbolBB tad, ElementoArbol dato){
     if(esArbolVacio(tad))
         return tad;
-    if(tad->elemento > dato)
+    if(comparaAbb(tad->elemento, dato) == 1)
         tad->hIzq = borraNodo(tad->hIzq, dato);
     else{
-        if(tad->elemento < dato)
+        if(comparaAbb(tad->elemento, dato) == -1)
             tad->hDrch = borraNodo(tad->hDrch, dato);
         else{
             if(esArbolVacio(tad->hIzq)){
@@ -72,4 +90,20 @@ ArbolBB minimoArbol(ArbolBB tad){
     minimoArbol(tad->hIzq);
 }
 
+ArbolBB buscarArbol(ArbolBB tad, ElementoArbol dato){
+    if(esArbolVacio(tad)){
+        return tad;
+    }
+    if(comparaAbb(tad->elemento, dato) == 0){
+        return tad;
+    }
+    if(comparaAbb(tad->elemento, dato) == 1){
+        return buscarArbol(tad->hDrch, dato);
+    }
+    else{
+        if(comparaAbb(tad->elemento, dato) == -1){
+            return buscarArbol(tad->hDrch, dato);
+        }
+    }
+}
 

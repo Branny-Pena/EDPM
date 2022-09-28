@@ -17,11 +17,11 @@ void construir_tabla(Tabla *);
 
 void registrar_entrada(Tabla *, ElementoArbol);
 
-void elimina_entrada(Tabla *, char *);
+void elimina_entrada(Tabla *, int);
 
 void destruir_tabla(Tabla *);
 
-void actualiza_entrada(Tabla *, char *, char *);
+void actualiza_entrada(Tabla *, int, double);
 
 #endif /* TABLA_H */
 

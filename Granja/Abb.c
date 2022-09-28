@@ -19,17 +19,12 @@
 
 //se especifica segun su problema
 int comparaabb(ElementoArbol a, ElementoArbol b){
-    return strcmp(a.llave, b.llave);
+    return a.codigo - b.codigo;
 }
 
 void asigna(ElementoArbol *a, ElementoArbol b){
-    free(a->llave);
-    a->llave = (char*)malloc(sizeof(char)*(strlen(b.llave)+1));
-    strcpy(a->llave, b.llave);
-    
-    free(a->valor);
-    a->valor = (char*)malloc(sizeof(char)*(strlen(b.valor)+1));
-    strcpy(a->valor, b.valor);
+    a->codigo = b.codigo;
+    a->peso = b.peso;
 }
 
 void insertar_abb(ArbolBB *tad,ElementoArbol dato){

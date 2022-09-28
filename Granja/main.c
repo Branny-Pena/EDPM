@@ -2,7 +2,7 @@
  * File:   main.c
  * Author: Branny
  *
- * Created on September 27, 2022, 8:21 AM
+ * Created on September 28, 2022, 9:28 AM
  */
 
 #include <stdio.h>
@@ -16,32 +16,41 @@ int main(int argc, char** argv) {
     Tabla tabla1;
     ElementoTabla aux;
     construir_tabla(&tabla1);
-    aux.llave = "Alumno";
-    aux.valor = "Delegado";
+    aux.codigo = 1;
+    aux.peso = 1.9;
     registrar_entrada(&tabla1, aux);
     
-    aux.llave = "Profesor";
-    aux.valor = "Viktor ya viene";
+    aux.codigo = 2;
+    aux.peso = 0.8;
     registrar_entrada(&tabla1, aux);
     
-    aux.llave = "JP";
-    aux.valor = "Se van rapido";
+    aux.codigo = 3;
+    aux.peso = 1.1;
     registrar_entrada(&tabla1, aux);
     
-    aux.llave = "Arboles";
-    aux.valor = "Es muy temido en LP1";
+    aux.codigo = 4;
+    aux.peso = 1.2;
     registrar_entrada(&tabla1, aux);
     
-    aux.llave = "Robot";
-    aux.valor = "Siempre viene";
+    aux.codigo = 5;
+    aux.peso = 1.5;
     registrar_entrada(&tabla1, aux);
     en_orden(tabla1);
     
-    elimina_entrada(&tabla1, "JP");
+    elimina_entrada(&tabla1, 1);
     printf("\n");
     en_orden(tabla1);
     
-    actualiza_entrada(&tabla1, "Robot", "Siempre viene y nunca les sale");
+    actualiza_entrada(&tabla1, 3, 5);
+    printf("\n");
+    en_orden(tabla1);
+    
+    aux.codigo = 1;
+    aux.peso = 3.9;
+    registrar_entrada(&tabla1, aux);
+    
+    printf("\n");
+    pre_orden(tabla1);
     printf("\n");
     en_orden(tabla1);
     
@@ -49,4 +58,3 @@ int main(int argc, char** argv) {
     en_orden(tabla1);
     return (EXIT_SUCCESS);
 }
-

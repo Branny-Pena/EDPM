@@ -18,10 +18,10 @@ void registrar_entrada(Tabla *tad, ElementoArbol dato){
         printf("Llave ya existe no se puede registrar\n");
 }
 
-void elimina_entrada(Tabla *tad, char *llave){
+void elimina_entrada(Tabla *tad, int codigo){
     ElementoTabla temp;
-    temp.llave = llave;
-    temp.valor = NULL;
+    temp.codigo = codigo;
+    temp.peso = 0;
      *tad = borranodo(*tad, temp);
 }
 
@@ -29,22 +29,16 @@ void destruir_tabla(Tabla *tad){
     destruir_ab(tad);
 }
 
-void actualiza_entrada(Tabla *tad, char *llave, char *nvalor){
+void actualiza_entrada(Tabla *tad, int codigo, double peso){
     ElementoTabla temp;
     ArbolBB aux;
     
-    temp.llave = (char*)malloc(sizeof(char)*strlen((llave)+1));
-    strcpy(temp.llave, llave);
-    
-    temp.valor = (char*)malloc(sizeof(char)*strlen((nvalor)+1));
-    strcpy(temp.valor, nvalor);
+    temp.codigo = codigo;
+    temp.peso = peso;
     
     aux = buscaarbol(*tad, temp);
     if(es_arbol_vacio(*tad))
         printf("No se puede actualizar\n");
     else
         asigna(&(aux->elemento), temp);
-    
-    free(temp.llave);
-    free(temp.valor);
 }

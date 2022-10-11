@@ -38,6 +38,9 @@ int main(int argc, char** argv) {
     
     procesarDatosArbol(&colaEmpqtDonTico, &colaEmpqtMorkys, &colaEmpqtTuttus, &arbolPollos);
     pre_orden(arbolPollos);
+    printf("\n\n");
+    entregarPollosMinPeso(&arbolPollos, 3, 0);
+    pre_orden(arbolPollos);
     //post_orden(arbolPollos);
     return (EXIT_SUCCESS);
 }

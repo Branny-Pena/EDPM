@@ -176,3 +176,17 @@ void procesarDatosArbol(ColaEmpqt *colaEmpqtDonTico, ColaEmpqt *colaEmpqtMorkys,
         }
     }
 }
+
+void entregarPollosMinPeso(ArbolBB *arbolPollos, double peso, double pesoEntr){
+    ArbolB dato;
+    ElementoArbol elemento;
+    if(pesoEntr >= peso)
+        return;
+    if(!es_arbol_vacio(*arbolPollos)){
+        dato = minimoarbol(*arbolPollos);
+        elemento = dato->elemento;
+        printf("[%2d %.2lf]\n", dato->elemento.codigo, dato->elemento.peso);
+        *arbolPollos = borranodo(*arbolPollos, dato->elemento);
+        entregarPollosMinPeso(arbolPollos, peso, pesoEntr+dato->elemento.peso);
+    }
+}

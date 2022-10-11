@@ -42,5 +42,7 @@ void procesarDatosArbol(ColaEmpqt *colaEmpqtDonTico, ColaEmpqt *colaEmpqtMorkys,
         ColaEmpqt *colaEmpqtTuttus, ArbolBB *arbolPollos);
 
 ElementoArbol casteoArbol(ElColaEmpqt a);
+
+void entregarPollosMinPeso(ArbolBB *arbolPollos, double peso, double pesoEntr);
 #endif /* FUNCIONESPOLLERIA_H */
 

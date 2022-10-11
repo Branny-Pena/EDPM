@@ -17,6 +17,8 @@
 #include "FuncionesPilas.h"
 #include "FuncionesColasEmpqt.h"
 #include "FuncionesPolleria.h"
+#include "Abb.h"
+#include "Colas.h"
 #define MAX_LIN 28
 
 FILE *abrirArchivo(const char *nombre,const char*modo){
@@ -140,4 +142,37 @@ void crearReporte(ColaEmpqt *colaEmpqtTuttus, ColaEmpqt *colaEmpqtMorkys,
 void imprimeLineas(FILE *archReporte, char c, int max){
     for(int i = 0; i < max; i++) fputc(c, archReporte);
     fputc('\n', archReporte);
+}
+
+ElementoArbol casteoArbol(ElColaEmpqt a){
+    ElementoArbol aux;
+    aux.codigo = a.codigo;
+    strcpy(aux.fecha, a.fecha);
+    aux.peso = a.peso;
+    strcpy(aux.tipo, a.tipo);
+    return aux;
+}
+
+void procesarDatosArbol(ColaEmpqt *colaEmpqtDonTico, ColaEmpqt *colaEmpqtMorkys,
+        ColaEmpqt *colaEmpqtTuttus, ArbolBB *arbolPollos){
+    ElColaEmpqt dato;
+    ElementoArbol datoAbb;
+    while(!esColaVaciaEmpqt(*colaEmpqtDonTico) || !esColaVaciaEmpqt(*colaEmpqtMorkys) ||
+            !esColaVaciaEmpqt(*colaEmpqtTuttus)){
+        if(!esColaVaciaEmpqt(*colaEmpqtMorkys)){
+            dato = desencolarEmpqt(colaEmpqtMorkys);
+            datoAbb = casteoArbol(dato);
+            insertar_abb(arbolPollos, datoAbb);
+        }
+        if(!esColaVaciaEmpqt(*colaEmpqtDonTico)){
+            dato = desencolarEmpqt(colaEmpqtDonTico);
+            datoAbb = casteoArbol(dato);
+            insertar_abb(arbolPollos, datoAbb);
+        }
+        if(!esColaVaciaEmpqt(*colaEmpqtTuttus)){
+            dato = desencolarEmpqt(colaEmpqtTuttus);
+            datoAbb = casteoArbol(dato);
+            insertar_abb(arbolPollos, datoAbb);
+        }
+    }
 }

@@ -35,10 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Ab.o \
+	${OBJECTDIR}/Abb.o \
+	${OBJECTDIR}/Colas.o \
 	${OBJECTDIR}/FuncionesColasEmpqt.o \
 	${OBJECTDIR}/FuncionesColasPs.o \
 	${OBJECTDIR}/FuncionesPilas.o \
 	${OBJECTDIR}/FuncionesPolleria.o \
+	${OBJECTDIR}/lse.o \
 	${OBJECTDIR}/main.o
 
 
@@ -60,11 +64,26 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/20200750_p1.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/20200750_p1_p1.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/20200750_p1.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/20200750_p1_p1.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/20200750_p1 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/20200750_p1_p1 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Ab.o: Ab.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Ab.o Ab.c
+
+${OBJECTDIR}/Abb.o: Abb.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Abb.o Abb.c
+
+${OBJECTDIR}/Colas.o: Colas.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Colas.o Colas.c
 
 ${OBJECTDIR}/FuncionesColasEmpqt.o: FuncionesColasEmpqt.c
 	${MKDIR} -p ${OBJECTDIR}
@@ -85,6 +104,11 @@ ${OBJECTDIR}/FuncionesPolleria.o: FuncionesPolleria.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FuncionesPolleria.o FuncionesPolleria.c
+
+${OBJECTDIR}/lse.o: lse.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/lse.o lse.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}

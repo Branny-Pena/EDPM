@@ -19,12 +19,14 @@
 
 //se especifica segun su problema
 int comparaabb(ElementoArbol a, ElementoArbol b){
-    return a.codigo - b.codigo;
+    return (a.peso*10000 + a.codigo) - (b.peso*10000 + b.codigo);
 }
 
 void asigna(ElementoArbol *a, ElementoArbol b){
     a->codigo = b.codigo;
+    strcpy(a->fecha, b.fecha);
     a->peso = b.peso;
+    strcpy(a->tipo, b.tipo);
 }
 
 void insertar_abb(ArbolBB *tad,ElementoArbol dato){

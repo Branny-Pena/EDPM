@@ -4,13 +4,17 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Ab.h</itemPath>
+      <itemPath>Abb.h</itemPath>
       <itemPath>ColaEmpaquetado.h</itemPath>
       <itemPath>ColaPesado.h</itemPath>
+      <itemPath>Colas.h</itemPath>
       <itemPath>FuncionesColasEmpqt.h</itemPath>
       <itemPath>FuncionesColasPs.h</itemPath>
       <itemPath>FuncionesPilas.h</itemPath>
       <itemPath>FuncionesPolleria.h</itemPath>
       <itemPath>PilaClasificacion.h</itemPath>
+      <itemPath>lse.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -19,10 +23,14 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Ab.c</itemPath>
+      <itemPath>Abb.c</itemPath>
+      <itemPath>Colas.c</itemPath>
       <itemPath>FuncionesColasEmpqt.c</itemPath>
       <itemPath>FuncionesColasPs.c</itemPath>
       <itemPath>FuncionesPilas.c</itemPath>
       <itemPath>FuncionesPolleria.c</itemPath>
+      <itemPath>lse.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -47,9 +55,21 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Ab.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Ab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Abb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Abb.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ColaEmpaquetado.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ColaPesado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Colas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Colas.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FuncionesColasEmpqt.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -68,6 +88,10 @@
       <item path="FuncionesPolleria.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PilaClasificacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lse.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -92,9 +116,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Ab.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Ab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Abb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Abb.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="ColaEmpaquetado.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="ColaPesado.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Colas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Colas.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="FuncionesColasEmpqt.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -113,6 +149,10 @@
       <item path="FuncionesPolleria.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="PilaClasificacion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="lse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="lse.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>

@@ -12,6 +12,7 @@
 #include "ColaEmpaquetado.h"
 #include "ColaPesado.h"
 #include "PilaClasificacion.h"
+#include "Abb.h"
 
 FILE *abrirArchivo(const char *nombre,const char*modo);
 
@@ -37,5 +38,9 @@ void crearReporte(ColaEmpqt *colaEmpqtTuttus, ColaEmpqt *colaEmpqtMorkys,
 
 void imprimeLineas(FILE *archReporte, char c, int max);
 
+void procesarDatosArbol(ColaEmpqt *colaEmpqtDonTico, ColaEmpqt *colaEmpqtMorkys,
+        ColaEmpqt *colaEmpqtTuttus, ArbolBB *arbolPollos);
+
+ElementoArbol casteoArbol(ElColaEmpqt a);
 #endif /* FUNCIONESPOLLERIA_H */
 

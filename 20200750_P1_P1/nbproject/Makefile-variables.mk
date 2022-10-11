@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=20200750_p1
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/20200750_p1
+CND_ARTIFACT_NAME_Debug=20200750_p1_p1
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/20200750_p1_p1
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=20200750p1.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/20200750p1.tar
+CND_PACKAGE_NAME_Debug=20200750p1p1.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/20200750p1p1.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=20200750_p1
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/20200750_p1
+CND_ARTIFACT_NAME_Release=20200750_p1_p1
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/20200750_p1_p1
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=20200750p1.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/20200750p1.tar
+CND_PACKAGE_NAME_Release=20200750p1p1.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/20200750p1p1.tar
 #
 # include compiler specific variables
 #
